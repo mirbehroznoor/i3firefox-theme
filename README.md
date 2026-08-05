@@ -1,9 +1,9 @@
 # i3firefox-theme
 It is the fork and the customized version of the [cankurttekin's wmfox](https://github.com/cankurttekin/wmfox)
 
-## Screenshots
+## Screenshot
 
-![Screenshot](./screenshots/screenshots_i3firefox-theme.jpg)
+![](screenshots_i3firefox-theme.jpg)
 
 Hint: Keyboard driven firefox extension: [Surfingkeys extension](https://github.com/brookhong/Surfingkeys)
 
@@ -12,7 +12,6 @@ Hint: Keyboard driven firefox extension: [Surfingkeys extension](https://github.
 ---
 
 # Installation
-
 
 ## Mozilla firefox directory
 
