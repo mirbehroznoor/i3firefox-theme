@@ -1,50 +1,73 @@
-# wmfox: Minimalist Keyboard-Oriented Firefox Theme
+# i3wmfirefox: i3 window manager Firefox Theme 
 
-wmfox is a custom Firefox theme designed for keyboard-driven, minimalist window manager setups (sway/i3, dwm, xmonad, etc).
-This is heavily opinionated and customized for my personal workflow and likings(like fonts, rose-pine colors etc.), check out the Dook97's repo if you want more streamlined solution.
+It is the fork and the customized version of the [cankurttekin's wmfox](https://github.com/cankurttekin/wmfox)
 
-## Features
+- Hint: Keyboard driven firefox extension: [Surfingkeys extension](https://github.com/brookhong/Surfingkeys)
 
-- **Tabs & URL Bar at the Bottom:** Keeps main content at eye level for a cleaner, distraction-free, ergonomic experience.
-- **Numbered Tabs:** Easily switch tabs using `Alt+number` or Vimium's `number+g0`—no guessing, cycling with `Ctrl+Tab`, or reaching for the mouse.
-- **Minimal UI:** Optimized for compact mode and removes unnecessary elements for a focused browsing environment.
+  => [My personal Surfingkeys.js config file](https://gist.github.com/mirbehroznoor/de0df8ad9870a69d00e998087f66a0f2)
 
 ## Screenshots
 
-![Screenshot](./screenshots/screenshot.png)
+![Screenshot](./screenshots/screenshots_wmfox.jpg)
 
-## Installation
+---
 
-1. **Enable User Chrome:**
-   - Go to `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+# Installation
 
-2. **Enable Compact Mode:**
-   - In `about:config`, set `browser.compactmode.show` to `true`.
-   - In the Customize Toolbar menu, set `Density` to `Compact`.
 
-3. **Remove Firefox View:**
-   - Use the Customize Toolbar menu to remove the Firefox View icon (top-left corner).
+### Mozilla firefox directory
 
-4. **Install the Theme:**
-   - Copy `userChrome.css` to the `chrome` directory in your Firefox profile. Create the directory if it doesn't exist.
-   - Find your profile directory via `about:profiles`.
+* Go to url: `about:support`
 
-5. **Font Configuration:**
-   - Install the IBM Plex Mono, or edit `userChrome.css` (search for 'IBM') to use another installed font.
+* Under heading `Applicaton Basics` look for section `Profile Directory` and click on the `Open Directory`
 
-6. **Customize Colors:**
-   - Tab text color is determined by its container. Fallback colors are used for non-container tabs.
-   - Choose a color scheme at the top of `userChrome.css` — uncomment one scheme block and comment out the others.
-   - Available presets: **Monochrome** (default), **Rosé Pine**, **Catppuccin Mocha**. 
-   - You can also tweak individual `--*` variables to make your own scheme.
+### Chrome Folder
 
-## Further Customizations
+* Once in directory look for the folder `chrome` if there is no such directory, create one, Manually __OR__ Use Terminal:
 
-### Disabling Favicons
+```bash
+mkdir -p chrome
+```
 
-- Search for 'disable favicons' in `userChrome.css` and uncomment the relevant line.
+### userChrome.css File
 
-## Credits
+#### 1. First Way
 
+* Go to the directory `chrome/` and create the file `userChrome.css`
+
+* Copy and Paste the contents of `userChrome.css`
+
+#### 2. Second Way
+
+* `git clone https://github.com/mirbehroznoor/i3wmfirefox.git`
+
+* Paste the `userChrome.css` file in `chrome/` folder
+
+### Firefox Permission:
+
+* Go to url `about:config`
+
+* Search for `toolkit.legacyUserProfileCustomizations.stylesheets` set it to __TRUE__
+
+* Restart the Firefox to enjoy your new theme
+
+# Keys
+
+* `Ctrl l` or `F6` slides down the navigation bar with url selection
+
+# Advice
+
+   There are no __one-size-fits-all__ theme
+
+   Have Fun Experimenting
+
+# Previous i3wm firefox theme
+- [i3wm-firefox-theme](https://github.com/mirbehroznoor/i3wm-firefox-theme)
+
+---
+
+## Acknowledgments
+
+- [cankurttekin's wmfox](https://github.com/cankurttekin/wmfox)
 - [Dook97's firefox-qutebrowser-userchrome](https://github.com/Dook97/firefox-qutebrowser-userchrome)
 - [aadilayub's firefox-i3wm-theme](https://github.com/aadilayub/firefox-i3wm-theme)
