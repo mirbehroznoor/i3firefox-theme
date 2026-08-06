@@ -5,26 +5,26 @@
 	   comment out the rest. Add your own at the end.
 	   ============================================= */
 
-	/* --- Rosé Pine --- */
-	/* --tab-active-bg-color: #2a283e;
+    /* --- Rosé Pine --- */
+	/* --tab-active-bg-color: #2a283e; */
 	--tab-inactive-bg-color: #908caa;
-	--tab-active-fg-fallback-color: #e0def4;
+	/* --tab-active-fg-fallback-color: #e0def4; */
 	--tab-inactive-fg-fallback-color: #393552;
-	--tab-hover-bg-color: #56526e;
+	/* --tab-hover-bg-color: #56526e; */
 	--urlbar-focused-bg-color: #eee;
 	--urlbar-not-focused-bg-color: #eee;
-	--sidebar-bg-color: #222;
-	--toolbar-bgcolor: #222 !important;
-	--sidebar-content-bg: #1e1e1e;
-	--tab-number-bg: #f6c177;
+	/* --sidebar-bg-color: #222; */
+	/* --toolbar-bgcolor: #222 !important; */
+	/* --sidebar-content-bg: #1e1e1e; */
+	--tab-number-bg: #C4A7E7;
 	--tab-number-fg: #000;
 	--urlbar-text-color: #1a1a1a;
-	--toolbar-text-color: #e0def4;
-	--panel-text-color: #e0def4;
+	/* --toolbar-text-color: #e0def4; */
+	/* --panel-text-color: #e0def4; */
 	--urlbar-row-hover-bg: #ddd;
 	--urlbar-row-hover-fg: #000;
-	--menuitem-hover-bg: #ddd;
-	--menuitem-hover-fg: #000; */
+	/* --menuitem-hover-bg: #ddd; */
+	/* --menuitem-hover-fg: #000; */
 
     /* --- Rosé Pine Dawn --- */
     /*
@@ -50,6 +50,7 @@
     */
 
     /* --- Monochrome Dark (default) --- */
+    /*
     --tab-active-bg-color: #2f2f2f;
     --tab-inactive-bg-color: #4f4f4f;
     --tab-active-fg-fallback-color: #ffffff;
@@ -69,9 +70,11 @@
     --urlbar-row-hover-fg: #ffffff;
     --menuitem-hover-bg: #3a3a3a;
     --menuitem-hover-fg: #ffffff;
+    */
 
 	/* --- Catppuccin Mocha --- */
-	/* --tab-active-bg-color: #313244;
+	/*
+    --tab-active-bg-color: #313244;
 	--tab-inactive-bg-color: #585b70;
 	--tab-active-fg-fallback-color: #cdd6f4;
 	--tab-inactive-fg-fallback-color: #a6adc8;
@@ -89,14 +92,16 @@
 	--urlbar-row-hover-bg: #45475a;
 	--urlbar-row-hover-fg: #ffffff;
 	--menuitem-hover-bg: #45475a;
-	--menuitem-hover-fg: #ffffff; */
+	--menuitem-hover-fg: #ffffff;
+     */
 
-	--tab-font: 'IBM Plex Mono';
-	--urlbar-font: 'IBM Plex Mono';
+	/* --tab-font: 'IBM Plex Mono'; */
+	/* --urlbar-font: 'IBM Plex Mono'; */
 
 	/* try increasing if you encounter problems */
 	--urlbar-height-setting: 22px;
-	--tab-min-height: 18px !important;
+	/* --tab-min-height: 18px !important; */
+	--tab-min-height: 26px !important;
 
 	/* I don't recommend you touch this unless you know what you're doing */
 	--arrowpanel-menuitem-padding: 2px !important;
@@ -112,6 +117,33 @@
 	--arrowpanel-color: var(--panel-text-color) !important;
 	--arrowpanel-background: var(--sidebar-bg-color) !important;
 }
+
+
+/* BEGIN */
+/* ~~~~~~~~~~~~~~~~~~~~~~~ */
+/* One-line layout theme */
+/* Acknowledgement: https://github.com/shoplukche/foxlim.git  */
+
+#navigator-toolbox { display: flex; flex-direction: column; }
+
+#nav-bar { flex: 0px 0px clamp(250px, 20vw, 600px); } }
+
+/*** Tabs toolbar and URL bar sizes and alignment ***/
+#TabsToolbar { height: 28px !important; }
+#TabsToolbar-customization-target { height: 26px !important; }
+
+/* Tabstrip height. */
+:root { --tabstrip-min-height: 26px !important; }
+
+/* Tab text label box height */
+.tab-label-container { height: 26px !important; }
+:root { --tab-block-margin: 0px !important; }
+
+/* Centering of the inner tabs toolbar */
+#TabsToolbar-customization-target { align-self: center; }
+/* ~~~~~~~~~~~~~~~~~~~~~~~ */
+/* END */
+
 
 /* --- GENERAL DEBLOAT ---------------------------------- */
 
@@ -167,10 +199,10 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 
 #urlbar-container {
 	--urlbar-container-height: var(--urlbar-height-setting) !important;
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
 	font-family: var(--urlbar-font, 'monospace');
 	font-size: 18px;
 }
@@ -311,7 +343,7 @@ menupopup, panel, .panel-arrowcontent {
 
 #TabsToolbar, .tabbrowser-tab {
 	max-height: var(--tab-min-height) !important;
-	font-size: 18px !important;
+	font-size: 14px !important;
 }
 
 /* Change color of normal tabs */
@@ -325,17 +357,18 @@ tab {
 	font-weight: bold;
 	border: none !important;
 	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
 
-.tab-content {
-	padding: 0 0 0 var(--tab-inline-padding);
-}
+/* .tab-content { */
+	/* padding: 0 0 0 var(--tab-inline-padding); */
+/* } */
 
-.tab-background {
-	margin-block: 0 !important;
-	min-height: var(--tab-min-height);
-	outline-offset: 0 !important;
-}
+/* .tab-background { */
+	/* margin-block: 0 !important; */
+	/* min-height: var(--tab-min-height); */
+	/* outline-offset: 0 !important; */
+/* } */
 
 /* safari style tab width */
 .tabbrowser-tab[fadein] {
@@ -414,6 +447,8 @@ tab {
 :root[inFullscreen] > body > #browser {
 	margin: 0 !important;
 }
+
+
 
 /* --- AUTOHIDE NAVBAR ---------------------------------- */
 
@@ -548,8 +583,12 @@ tab {
 	content: counter(tab-counter);
 	margin-right: 0.4em;
 	padding: var(--tab-min-height) 0.4em;
+	/* color: var(--identity-icon-color, var(--tab-inactive-fg-fallback-color)) !important; */
+	/* color: var(--tab-active-fg-fallback-color); */
 	color: var(--tab-number-fg);
 	background-color: var(--tab-number-bg);
+	/* color: #222; */
+	/* background-color: #fff481; */
 }
 
 /* Remove extra bottom spacing from tab groups */
