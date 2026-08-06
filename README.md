@@ -59,7 +59,9 @@ mkdir -p chrome
 - [i3wm-firefox-theme](https://github.com/mirbehroznoor/i3wm-firefox-theme)
 
 # Acknowledgments
+- [cankurttekin/wmfox](https://github.com/cankurttekin/wmfox)
+- [shoplukche/foxlim](https://github.com/shoplukche/foxlim)
 
-- [cankurttekin's wmfox](https://github.com/cankurttekin/wmfox)
-- [Dook97's firefox-qutebrowser-userchrome](https://github.com/Dook97/firefox-qutebrowser-userchrome)
-- [aadilayub's firefox-i3wm-theme](https://github.com/aadilayub/firefox-i3wm-theme)
+## Other Credits to similar themes
+- [Dook97/firefox-qutebrowser-userchrome](https://github.com/Dook97/firefox-qutebrowser-userchrome)
+- [aadilayub/firefox-i3wm-theme](https://github.com/aadilayub/firefox-i3wm-theme)
