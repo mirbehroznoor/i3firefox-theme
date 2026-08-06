@@ -121,11 +121,10 @@
 
 /* BEGIN */
 /* ~~~~~~~~~~~~~~~~~~~~~~~ */
-/* One-line layout theme */
-/* Acknowledgement: https://github.com/shoplukche/foxlim.git  */
+/* source: Foxlim (firefox theme) */
+/* acknowledgement: https://github.com/shoplukche/foxlim.git  */
 
 #navigator-toolbox { display: flex; flex-direction: column; }
-
 #nav-bar { flex: 0px 0px clamp(250px, 20vw, 600px); } }
 
 /*** Tabs toolbar and URL bar sizes and alignment ***/
@@ -143,7 +142,6 @@
 #TabsToolbar-customization-target { align-self: center; }
 /* ~~~~~~~~~~~~~~~~~~~~~~~ */
 /* END */
-
 
 /* --- GENERAL DEBLOAT ---------------------------------- */
 
