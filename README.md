@@ -1,13 +1,11 @@
 # i3firefox-theme
-It is the fork and the customized version of the [cankurttekin's wmfox](https://github.com/cankurttekin/wmfox)
+- It is the fork and the customized version of the [cankurttekin's wmfox](https://github.com/cankurttekin/wmfox)
 
 ## Screenshot
+__Hint: Keyboard driven firefox extension: [Surfingkeys extension](https://github.com/brookhong/Surfingkeys)__
+- __[My personal Surfingkeys.js config file](https://gist.github.com/mirbehroznoor/de0df8ad9870a69d00e998087f66a0f2)__
 
 ![](screenshots_i3firefox-theme.jpg)
-
-Hint: Keyboard driven firefox extension: [Surfingkeys extension](https://github.com/brookhong/Surfingkeys)
-
-- [My personal Surfingkeys.js config file](https://gist.github.com/mirbehroznoor/de0df8ad9870a69d00e998087f66a0f2)
 
 ---
 
@@ -19,29 +17,27 @@ Hint: Keyboard driven firefox extension: [Surfingkeys extension](https://github.
 
 * Under heading `Applicaton Basics` look for section `Profile Directory` and click on the `Open Directory`
 
-## Chrome Folder
-
-* Once in directory look for the folder `chrome` if there is no such directory, create one, Manually __OR__ Use Terminal:
+* Look for the folder `chrome` or manually create one __OR__ via terminal:
 
 ```bash
 mkdir -p chrome
 ```
 
-## userChrome.css File
+## `userChrome.css`
 
-### First Way
-
-* Go to the directory `chrome/` and create the file `userChrome.css`
-
-* Copy and Paste the contents of `userChrome.css`
-
-### Second Way
+### Clone the repository in the `chrome/` folder
 
 * `git clone https://github.com/mirbehroznoor/i3wmfirefox.git`
 
 * Paste the `userChrome.css` file in `chrome/` folder
 
-## Firefox Permission:
+### Manually create and copy `userChrome.css` contents
+
+* Go to the directory `chrome/` and create the file `userChrome.css`
+
+* Copy and Paste the contents of `userChrome.css`
+
+## Firefox Permissions
 
 * Go to url `about:config`
 
@@ -57,12 +53,10 @@ mkdir -p chrome
 
    There are no __one-size-fits-all__ theme
 
-   Have Fun Experimenting
+   __Have Fun Experimenting__
 
 ## Previous i3wm firefox theme 
 - [i3wm-firefox-theme](https://github.com/mirbehroznoor/i3wm-firefox-theme)
-
----
 
 # Acknowledgments
 
