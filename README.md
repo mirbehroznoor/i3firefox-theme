@@ -55,7 +55,7 @@ There are no __one-size-fits-all__ theme
 __Have Fun Experimenting__
 
 ## Previous i3wm firefox theme 
-- [i3wm-firefox-theme](https://github.com/mirbehroznoor/i3wm-firefox-theme)
+- [mirbehroznoor/i3wm-firefox-theme](https://github.com/mirbehroznoor/i3wm-firefox-theme)
 
 # Acknowledgments
 - [cankurttekin/wmfox](https://github.com/cankurttekin/wmfox)
